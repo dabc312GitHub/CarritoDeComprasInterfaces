@@ -1,0 +1,133 @@
+## A streamlined and comprehensive .gitignore for modern .NET/C# projects
+## Covers Build results, IDEs (Visual Studio, VS Code, Rider), 
+## NuGet, local databases, and OS-specific temporary files.
+
+# =========================
+# Build results & Binaries
+# =========================
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+*.exe
+*.dll
+*.pdb
+*.idb
+
+# =========================
+# .NET Core & NuGet
+# =========================
+project.lock.json
+project.fragment.lock.json
+*.nupkg
+*.snupkg
+# The packages folder can be ignored because NuGet restores them
+packages/
+# Restore markers
+*.nuget.props
+*.nuget.targets
+
+# =========================
+# ASP.NET Core & Security
+# =========================
+ScaffoldingReadMe.txt
+# Ignore environment files containing local secrets
+.env
+.env.*
+# User Secrets ID mapping (sometimes accidentally added)
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# =========================
+# Local Databases
+# =========================
+# Ignore local SQLite databases often used for testing
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+# Ignore LocalDB/SQL Server express files
+*.mdf
+*.ldf
+*.ndf
+
+# =========================
+# IDE & Code Editors
+# =========================
+
+# --- Visual Studio ---
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.sln.targets
+# Visual Studio test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.vsmdi
+*.testsettings
+
+# --- Visual Studio Code (VS Code) ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# --- JetBrains Rider / ReSharper ---
+.idea/
+*.sln.iml
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# =========================
+# Testing & Coverage
+# =========================
+CodeCoverage/
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+*.coverage
+*.coveragexml
+_Chutzpah*
+coverage/
+
+# =========================
+# OS & Misc Temporary Files
+# =========================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# MSBuild Log
+*.binlog
+
+# Backup & Temp files
+~$*
+*~
+*.bak
+*.tmp
+*.temp
